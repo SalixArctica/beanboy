@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" tpye="text/css" href="index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="center">
+            <a href="#portfolio"><h1 class="title" id="bean">bean</h1></a>
+            <h1 onclick="unmute()" class="title muteBtn fas fa-volume-down"> </h1>
+            <h1 class="title" id="boy">boy</h1>
+        </div>
+
+        <video id="jumboVid" autoplay muted>
+            <source src="Our Long Fall From Grace.mp4" type="video/mp4">
+        </video>
+
+        <div id="portfolio">
+            <h2 class="title">portfolio</h2>
+            <div class="portfolioContainer">
+                <div class="music">
+                    <h3 class="subtitle">Music</h2>
+                    <audio controls src="Our Long Fall From Grace.mp3"></audio>
+                    <audio controls src="audio.wav"></audio>
+                </div>
+                <div class="art">
+
+                    <h3 class="subtitle">art</h2>
+                    <img src="./media/09_2.png"/>
+                    <img src="./media/1217.png"/>
+                    <img src="./media/HAL0 02.png"/>
+                    <img src="./media/O_02.png"/>
+                    
+                </div>
+                <div class="animation">
+
+                    <h3 class="subtitle">animation</h2>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+    <script>
+        var video = document.getElementById('jumboVid');
+        var btn = document.getElementsByClassName('muteBtn');
+        
+        unmute = () => {
+            video.muted = !video.muted
+        }
+
+    </script>
+</html>
