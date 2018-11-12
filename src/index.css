@@ -1,15 +1,24 @@
 html {
-    overflow-x: hidden;
+
 }
 
 body {
     background: black;
+    overflow-x: hidden;
 }
 
 #jumboVid {
-    margin-top: -85px;
     position: relative;
     width: 100%;
+    background-image: url('/home/tankcaster/code/beanboy/dist/media/images/beanBoyBg.png');
+    mix-blend-mode: difference;
+}
+
+.vidContainer {
+    margin-top: -85px;
+    background-image: url('/media/images/beanBoyBg.png');
+    background-size: 100%;
+    mix-blend-mode: exclusion;
     z-index: -1;
 }
 
@@ -21,12 +30,38 @@ body {
     display: grid;
 }
 
+.links {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+} 
+
+.links > h2, .social > h2 {
+    margin: 2rem;
+    background: white;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    mix-blend-mode: exclusion;
+}
+
+.links > h2:hover {
+    animation: spin 1s linear 5s;
+}
+
+.social {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0, -50%);
+}
+
 .title {
     font-family: 'Courier New', Courier, monospace;
-    background: white;
-    color: black;
     text-align: center;
     padding: 1rem;
+    color: black;
+    background-color: white;
+    mix-blend-mode: difference;
 }
 
 .muteBtn {
@@ -73,3 +108,9 @@ body {
 .subtitle {
     font-family: 'Courier New', Courier, monospace;
 }
+
+.animation > video {
+    width: 100%;
+}
+
+@keyframes spin { 100% { transform:rotate3d(1, 0, 0, 360deg); } }

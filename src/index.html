@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" tpye="text/css" href="index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body id="container1">
+        <div id="container2">
+
+
+        <div onclick="document.getElementById('portfolio').scrollIntoView(true, {behavior: 'smooth'})" class="links">
+            <h2 >portfolio</h2>
+            <h2>merch</h2>
+            <h2>contact</h2>
+        </div>
+
+        <div class="social">
+            <h2>FACEDBOOK</h2>
+            <h2>BANNED CAMP</h2>
+            <h2>INSTANT GRAM</h2>
+            <h2>CLOUDY SOUNDS</h2>
+        </div>
+        <div class="vidContainer">
+            <video id="jumboVid" autoplay muted loop>
+                    <source src="./media/video/Our Long Fall From Grace.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+        <div id="portfolio">scrollTo('portfolio')
+            <h2 class="title">portfolio</h2>
+            <div class="portfolioContainer">
+                <div class="music">
+                    <h3 class="subtitle">Music</h2>
+                    <audio controls src="Our Long Fall From Grace.mp3"></audio>
+                    <audio controls src="audio.wav"></audio>
+                </div>
+                <div class="art">
+
+                    <h3 class="subtitle">art</h2>
+                    <img src="./media/images/09_2.png"/>
+                    <img src="./media/images/1217.png"/>
+                    <img src="./media/images/HAL0 02.png"/>
+                    <img src="./media/images/O_02.png"/>
+                    
+                </div>
+                <div class="animation">
+
+                    <h3 class="subtitle">animation</h2>
+                    <video controls src="./media/video/WE+DO+THE+BEST+WE+CAN+VID.mp4"/>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </body>
+
+    <script src="./dist.bundle.js"/>
+</html>

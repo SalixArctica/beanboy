@@ -6,8 +6,21 @@
     <body>
         <div class="center">
             <a href="#portfolio"><h1 class="title" id="bean">bean</h1></a>
-            <h1 onclick="unmute()" class="title muteBtn fas fa-volume-down"> </h1>
+            <h1 onclick="unmute()" id="btn" class="title muteBtn fas fa-volume-off"> </h1>
             <h1 class="title" id="boy">boy</h1>
+        </div>
+
+        <div class="links">
+            <h2>portfolio</h2>
+            <h2>maasdfh</h2>
+            <h2>contact</h2>
+        </div>
+
+        <div class="social">
+            <h2>FACEDBOOK</h2>
+            <h2>BANNED CAMP</h2>
+            <h2>INSTAGRAM</h2>
+            <h2>CLOUD SOUND</h2>
         </div>
 
         <video id="jumboVid" autoplay muted>
@@ -25,29 +38,22 @@
                 <div class="art">
 
                     <h3 class="subtitle">art</h2>
-                    <img src="./media/09_2.png"/>
-                    <img src="./media/1217.png"/>
-                    <img src="./media/HAL0 02.png"/>
-                    <img src="./media/O_02.png"/>
+                    <img src="./media/images/09_2.png"/>
+                    <img src="./media/images/1217.png"/>
+                    <img src="./media/images/HAL0 02.png"/>
+                    <img src="./media/images/O_02.png"/>
                     
                 </div>
                 <div class="animation">
 
                     <h3 class="subtitle">animation</h2>
+                    <video controls src="./media/video/WE+DO+THE+BEST+WE+CAN+VID.mp4"/>
 
                 </div>
             </div>
 
         </div>
-    </body>
+    <script type="text/javascript" src="bundle.js"></script></body>
 
-    <script>
-        var video = document.getElementById('jumboVid');
-        var btn = document.getElementsByClassName('muteBtn');
-        
-        unmute = () => {
-            video.muted = !video.muted
-        }
-
-    </script>
+    <script src="./dist.bundle.js"/>
 </html>
